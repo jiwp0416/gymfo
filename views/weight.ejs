@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <%- include('includes/head') %>
+
+
+    <title>GYMFO - WEIGHT</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3V384T0LJC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3V384T0LJC');
+    </script>
+
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8832660695566794"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <%- include('includes/header') %>
+
+
+    <main id="mainKo">
+        <div class="main">
+            <aside class="aside">
+            </aside>
+
+            <div id="upKo" class="container">
+
+
+                <div class="inner-box">
+
+                    <div onclick="myFunction2(); myFunction3();" id="standard-posture"
+                        class="standard-posture dropbtn disappear">
+                        <div id="standardDropdown" class="standard-dropdown">
+                            <h4>일일 소비 칼로리</h4>
+                            <p class="text-center">기초대사량 &times; 활동계수</p>
+                            <h5 style="margin-bottom: 7px;">기초대사량</h5>
+                            <p>체지방이 높다면(Harris-Benedict)</p>
+                            <p>M - 66 + (13.7 x weight in kg) + (5 x height in cm) - (6.76 x age in years)</p>
+                            <p style="margin-bottom: 7px;">F - 655 + (9.6 x weight in kg) + (1.8 x height in cm) - (4.7
+                                x
+                                age in years)</p>
+                            <p>제지방이 높다면(Cunningham)</p>
+                            <p>500 + (22 x 제지방량)</p>
+                            <br>
+                            <h5>활동계수</h5>
+                            <p style="margin-bottom: 4px;">일반활동 + 운동활동</p>
+                            <p>일반활동 - Low Activity 1.2 | Moderate Activity 1.4 | High Activity 1.6</p>
+                            <p>운동활동 - 0/week + 0 | 1-3/week + 0.1 | 4-6/week + 0.2 | 7+/week + 0.3</p>
+                            <br>
+                            <h4>하루 권장 칼로리</h4>
+                            <p class="text-center">표준체중 &times; 활동지수</p>
+                            <p style="margin-bottom: 7px;">표준체중 (키 - 100) &times; 0.9</p>
+                            <p>육체활동이 거의 없는 경우 | 표준체중 X 25-30</p>
+                            <p>보통의 활동을 하는 경우 | 표준체중 X 30-35</p>
+                            <p>심한 육체활동을 하는 경우 | 표준체중 X 35-40</p>
+                        </div>
+                    </div>
+
+                    <!-- <div id="down-arr" class=" down-arr">&#748;</div> -->
+
+                    <a class="a-html" href="/HTML/NUTRIENT/calculator.html" target="_blank">계산기</a>
+                </div>
+
+
+                <div class="inner-container">
+
+
+                    <section class="theme">
+                        <h1 class="main-title">체중</h1>
+
+                        <nav class="main-nav">
+                            <h4>바로가기</h4>
+                            <ul>
+                                <li><a href="#wk_d">다이어트</a></li>
+                                <li><a href="#wk_b">벌크업</a></li>
+                                <li><a href="#wk_y">요요</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+
+
+                    <section class="diet">
+                        <div id="wk_d">
+                            <div class="main-wt">
+                                <h4 class="main-wt-title">
+                                    <span class="cursor" data-modal-target="#modal121-1.">다이어트</span>
+                                    <div class="modal" id="modal121-1.">
+                                        <div class="modal-header">
+                                            <button data-close-button class="close-button">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modal-p">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="overlay"></div>
+                                </h4>
+
+                                <ul>
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal121-2">체중 감량하는 법</span>
+                                        <div class="modal" id="modal121-2">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>일일 섭취 칼로리는 일일 소비 칼로리의 80% ~ 90%가 되게 해야 한다</p>
+                                                    <p>일일 소비 칼로리의 60% ~ 70%만큼 먹으면 근육도 빠진다</p>
+                                                    <br>
+                                                    <p>일일 섭취 칼로리를 60%로 제한하더라도 kg/1.6 ~ 2.2g 이상의 고단백 식사를 한다면 근손실을 최소화 하며
+                                                        지방
+                                                        감량을 할 수 있다</p>
+                                                    <p>고강도 운동을 즐겨 한다면 kg/3g의 고단백 섭취도 효과적일 것이다</p>
+                                                    <p>몸에 이상이 생기지 않는 선에서 유동적으로 체중 감량에 노력할 것을 권장한다</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal121-3">체중 감량의 원리</span>
+                                        <div class="modal" id="modal121-3">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>부족한 에너지 공급과 증가한 에너지 소비로 인해 몸안의 에너지 결핍을 만든다</p>
+                                                    <p>신체는 이러한 현상을 보상하기 위해 간에 저장된 비상 포도당 공급을 글리코겐 형태로 분해한다</p>
+                                                    <p>이후 4~6시간 지나면 몸은 지방 세포를 주요 에너지원으로 연소한다</p>
+                                                    <p>이 과정은 지질 방울을 방출하고 그것들은 화합물로 분해되어 혈류를 통해 떠다니고 장기와 조직에 에너지를 공급한다
+                                                    </p>
+                                                    <p>꾸준한 운동은 근육량을 유지하고 더 많은 에너지를 사용하여 체중 감량에 큰 도움이 된다</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal121-4">급격한 칼로리 제한을 하면 안 되는
+                                            이유</span>
+                                        <div class="modal" id="modal121-4">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>칼로리 섭취를 극적으로 제한하면 몸은 기아 반응으로 이에 대처한다</p>
+                                                    <p>몸은 18시간 만에 비상 포도당 전체를 분해하고 에너지가 부족한 몸은 근육을 포함한 다른 물질을 분해하기 시작한다
+                                                    </p>
+                                                    <p>또한 신체의 기본 기능을 위해 적은 칼로리를 소모하여 결과적으로 이는 체중 감량을 더 어렵게 만든다</p>
+                                                    <p>글리코겐은 1g당 물 몇 그램과 결합한다. 글리코겐이 고갈되면 최대 2kg의 물 무게를 줄일 수 있다</p>
+                                                    <p>칼로리 섭취 제한 후 갑자기 살이 몇 키로 빠졌다면 이를 지방이 감량된 것으로 생각해선 안 된다</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal121-5">효과적인 다이어트법</span>
+                                        <div class="modal" id="modal121-5">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>평일엔 일일 소비 칼로리의 65%만 섭취</p>
+                                                    <p>주말엔 일일 소비 칼로리의 100%를 섭취하되 추가 35%는 탄수화물로만 섭취</p>
+                                                    <p>근육의 글리코겐을 유지하고 탄수로 분비되는 인슐린이 단백질 분해를 억제해 주어 근육의 손실을 현저히 줄여준다</p>
+                                                    <p>단백질은 kg/2g을 섭취할 것을 권장한다</p>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal121-6">탄단지 비율</span>
+                                        <div class="modal" id="modal121-6">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <h4>탄단지 비율</h4>
+                                                    <p>탄수화물 - 나머지</p>
+                                                    <p>단백질 - kg/2.2g</p>
+                                                    <p>지방 - 일일 총 섭취량의 30%미만(25%로 게산)</p>
+
+                                                    <h5>느린 체중 감량</h5>
+                                                    <p>ex) 80kg - 일일 총 섭취량 : 3000kcal(감량)</p>
+                                                    <p>탄: 386g(1545kcal), 단:176g(704kcal), 지: 83g(750kcal)</p>
+
+                                                    <h5>빠른 체중 감량</h5>
+                                                    <p>ex) 80kg - 일일 총 섭취량 : 2800kcal(감량)</p>
+                                                    <p>탄: 350g(1400kcal), 단:176g(704kcal), 지: 77g(700kcal)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="bulkup">
+                        <div id="wk_b">
+                            <div class="main-wt">
+                                <h4 class="main-wt-title">벌크업</h4>
+
+                                <ul>
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal122-2">체중 증량하는 법</span>
+                                        <div class="modal" id="modal122-2">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p><strong>일일 소비 칼로리 + 500 ~ 1000kcal 추가 섭취</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal122-3">체중 증량의 원리</span>
+                                        <div class="modal" id="modal122-3">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal122-4">기본 식단에서(삼시 세 끼) 두세 끼 정도를
+                                            추가하여
+                                            섭취</span>
+                                        <div class="modal" id="modal122-4">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>기존 식사의 양과 끼니를 늘리고 섭취해야 할 칼로리를 나누어 섭취할 것을 권장한다(한 끼에 과식하지 말 것을
+                                                        권장한다)
+                                                    </p>
+                                                    <p>항상 식사로 칼로리를 채우기는 힘드니 한 끼 정도는 음료 형태로도 섭취할 것을 권장한다</p>
+                                                    <p>게이너, 땅콩버터, 우유, 미숫가루(미숫가루 + 우유/두유, 미숫가루 + 단백질 쉐이크) 등</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal122-5">유산소</span>
+                                        <div class="modal" id="modal122-5">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>벌크업 과정에서 고탄수화물 식사를 하다 보면 근세포의 인슐린 민감도가 낮아지고 근성장이 정체된다</p>
+                                                    <p>유산소훈련은 인슐린 민감도를 높여 주어 근성장 정체기를 예방한다</p>
+                                                    <p>웨이트 트레이닝 후 유산소운동은 근세포를 늘리는 성장호르몬의 수치를 높일 수 있다</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal122-6">공복 웨이트 트레이닝</span>
+                                        <div class="modal" id="modal122-6">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>근육의 에너지 저장소인 글리코겐이 보충되어 있지 않은 상태에서 고강도 운동을 한다면 빠르게 고갈되어 버린 글리코겐을
+                                                        대신하여
+                                                    </p>
+                                                    <p>우리 몸은 단백질을 대체 에너지원으로 사용할 것이다</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal122-7">탄단지 비율</span>
+                                        <div class="modal" id="modal122-7">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <h4>탄단지 비율</h4>
+                                                    <p>탄수화물 - 나머지</p>
+                                                    <p>단백질 - kg/2.2g</p>
+                                                    <p>지방 - 일일 총 섭취량의 30%미만(25%로 계산)</p>
+
+                                                    <h5>느린 체중 증량</h5>
+                                                    <p>ex) 80kg - 일일 총 섭취량 : 3500kcal(증량)</p>
+                                                    <p>탄: 475g(1900kcal), 단:176g(704kcal), 지: 97g(875kcal)</p>
+
+                                                    <h5>빠른 체중 증량</h5>
+                                                    <p>ex) 80kg - 일일 총 섭취량 : 3800kcal(증량)</p>
+                                                    <p>탄: 536g(2145kcal), 단:176g(704kcal), 지: 105g(960kcal)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="yoyo">
+                        <div id="wk_y">
+                            <div class="main-wt no-border">
+                                <h4 class="main-wt-title">
+                                    <span class="cursor" data-modal-target="#modal123-1">요요</span>
+                                    <div class="modal" id="modal123-1">
+                                        <div class="modal-header">
+                                            <button data-close-button class="close-button">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modal-p">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="overlay"></div>
+                                </h4>
+
+                                <ul>
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal123-2">주의사항</span>
+                                        <div class="modal" id="modal123-2">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>다이어트를 진행하다가 갑자기 엄청난 양의 칼로리를 섭취한다면 인체는 이것을 다 지방으로 저장한다</p>
+                                                    <p>섭취되는 칼로리가 매우 적다면 몸은 섭취된 에너지를 안 쓰고 최대한 아끼려고 한다. 이는 몸의 대사 작용을 감소시켜
+                                                        살
+                                                        빠지는 것을 오히려 어렵게 한다</p>
+                                                    <p>급격한 칼로리 섭취 제한은 체중 감소에 해가 된다</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target="#modal123-3"></span>
+                                        <div class="modal" id="modal123-3">
+                                            <div class="modal-header">
+                                                <button data-close-button class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <button class="material-symbols-outlined up-arrow"><a href="#upKo">arrow_upward</a></button>
+
+            </div>
+            <aside class="aside">
+                <div class="calculator-grid">
+                    <div class="output">
+                        <div data-previous-operand class="previous-operand"></div>
+                        <div data-current-operand class="current-operand"></div>
+                    </div>
+                    <button data-all-clear class="span-two">AC</button>
+                    <button data-delete>DEL</button>
+                    <button data-operation>÷</button>
+                    <button data-number>1</button>
+                    <button data-number>2</button>
+                    <button data-number>3</button>
+                    <button data-operation>*</button>
+                    <button data-number>4</button>
+                    <button data-number>5</button>
+                    <button data-number>6</button>
+                    <button data-operation>+</button>
+                    <button data-number>7</button>
+                    <button data-number>8</button>
+                    <button data-number>9</button>
+                    <button data-operation>-</button>
+                    <button data-number id="cal-dot bb">.</button>
+                    <button data-number class="bb">0</button>
+                    <button data-equals class="span-two bb">=</button>
+
+                    <input class="cal-input" type="number"></input>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+
+
+
+
+    <main id="mainEn">
+        <div class="main">
+            <aside class="aside">
+            </aside>
+
+            <div id="upEn" class="container">
+
+
+                <div class="inner-box">
+
+                    <div onclick="myFunction2(); myFunction3();" id="standard-posture"
+                        class="standard-posture dropbtn disappear">
+                        <div id="standardDropdown" class="standard-dropdown">
+                            <h4>Calories Burned Per Day</h4>
+                            <p class="text-center">Basal Metabolic Rate(BMR) &times; Activity Coefficient</p>
+                            <h5 style="margin-bottom: 7px;">BMR</h5>
+                            <p>If your body fat is high(Harris-Benedict)</p>
+                            <p>M - 66 + (13.7 x weight in kg) + (5 x height in cm) - (6.76 x age in years)</p>
+                            <p style="margin-bottom: 7px;">F - 655 + (9.6 x weight in kg) + (1.8 x height in cm) - (4.7
+                                x
+                                age in years)</p>
+                            <p>If your lean body mass is high(Cunningham)</p>
+                            <p>500 + (22 x 제지방량)</p>
+                            <br>
+                            <h5>Activity Coefficient</h5>
+                            <p style="margin-bottom: 4px;">General Activity + Motor Activity</p>
+                            <p>General Activity - Low Activity 1.2 | Moderate Activity 1.4 | High Activity 1.6</p>
+                            <p>Motor Activity - 0/week + 0 | 1-3/week + 0.1 | 4-6/week + 0.2 | 7+/week + 0.3</p>
+                            <br>
+                            <h4>Recommended Calories Per Day</h4>
+                            <p class="text-center">Standard Weight &times; Activity Index</p>
+                            <p style="margin-bottom: 7px;">Standard Weight (Height - 100) &times; 0.9</p>
+                            <p>If there is little physical activity | Standard Weight X 25-30</p>
+                            <p>If there is normal physical activity | Standard Weight X 30-35</p>
+                            <p>If there is heavy physical activity | Standard Weight X 35-40</p>
+                        </div>
+                    </div>
+
+                    <!-- <div id="down-arr" class=" down-arr">&#748;</div> -->
+
+                    <a class="a-html" href="/HTML/NUTRIENT/calculator.html" target="_blank">계산기</a>
+                </div>
+
+
+                <div class="inner-container">
+
+
+                    <section class="theme">
+                        <h1 class="main-title">WEIGHT</h1>
+
+                        <nav class="main-nav">
+                            <h4>Shortcut</h4>
+                            <ul>
+                                <li><a href="#we_d">Diet</a></li>
+                                <li><a href="#we_b">Bulk</a></li>
+                                <li><a href="#we_y">Yoyo Effect</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+
+
+                    <section class="diet">
+                        <div id="we_d">
+                            <div class="main-wt">
+                                <h4 class="main-wt-title">Diet</h4>
+
+                                <ul>
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal121-211">How to lose
+                                            weight</span>
+                                        <div class="modal2" id="modal121-211">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>Your daily calorie intake should be between 80% and 90% of your
+                                                        daily calories burned</p>
+                                                    <p>If you eat 60% to 70% of your daily calories, you will lose
+                                                        muscle too</p>
+                                                    <br>
+                                                    <p>Even if you limit your daily calorie intake to 60%, you can
+                                                        minimize muscle loss by having a high-protein diet of 1.6g to
+                                                        2.2g / kg or more</p>
+                                                    <p>If you enjoy high-intensity exercise, a high protein intake of
+                                                        kg/3g will be not bad</p>
+                                                    <p>It is recommended that you try to lose weight flexibly without
+                                                        causing any abnormalities to your body</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal121-311">Principles of weight
+                                            loss</span>
+                                        <div class="modal2" id="modal121-311">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>Insufficient energy supply and increased energy consumption
+                                                        create energy deficiency in the body</p>
+                                                    <p>To compensate for this, the body breaks down the liver's stored
+                                                        emergency supply of glucose into glycogen</p>
+                                                    <p>After 4-6 hours, the body burns fat cells as its main source of
+                                                        energy</p>
+                                                    <p>This process releases lipid droplets that break down into
+                                                        compounds that float through the bloodstream and provide energy
+                                                        to organs and tissues</p>
+                                                    <p>Consistent exercise helps you lose weight by maintaining muscle
+                                                        mass and using more energy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal121-411">Don't do drastic calorie
+                                            restriction
+                                            Reason</span>
+                                        <div class="modal2" id="modal121-411">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>If you dramatically limit your calorie intake, your body responds
+                                                        with a starvation response</p>
+                                                    <p>The body breaks down all of the emergency glucose in 18 hours,
+                                                        and a low-energy body starts breaking down other substances,
+                                                        including muscle</p>
+                                                    <p>It also burns fewer calories for basic body functions, which in
+                                                        turn makes losing weight more difficult</p>
+                                                    <p>Glycogen binds to several grams of water per gram. When glycogen
+                                                        is depleted, you can lose up to 2 kg of water weight</p>
+                                                    <p>If you suddenly lose a few pounds after restricting your calorie
+                                                        intake, don't think of it as losing fat</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal121-511">Effective Diet</span>
+                                        <div class="modal2" id="modal121-511">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>Eat only 65% of daily calories burned on weekdays</p>
+                                                    <p>On the weekend, eat 100% of your daily calories, but an
+                                                        additional 35% from carbs</p>
+                                                    <p>Insulin, which is secreted as carbohydrates and maintains muscle
+                                                        glycogen, inhibits protein breakdown, significantly reducing
+                                                        muscle loss</p>
+                                                    <p>It is recommended to consume kg/2g of protein</p>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal121-611">Carb, Prot, Fat
+                                            Ratio</span>
+                                        <div class="modal2" id="modal121-611">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <h4>Carb, Prot, Fat Ratio</h4>
+                                                    <p>Carb - rest</p>
+                                                    <p>Protein - kg / 2.2g</p>
+                                                    <p>Fat - Less than 30% of your total daily intake(calculated as 25%)
+                                                    </p>
+
+                                                    <h5>Slow weight loss</h5>
+                                                    <p>ex) 80kg - Daily total intake: 3000kcal(diet)</p>
+                                                    <p>Carb: 386g (1545kcal), Prot: 176g(704kcal), Fat: 83g(750kcal)</p>
+
+                                                    <h5>Fast weight loss</h5>
+                                                    <p>ex) 80kg - Daily total intake: 2800kcal(diet)</p>
+                                                    <p>Carb: 350g (1400kcal), Prot: 176g(704kcal), Fat: 77g(700kcal)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="bulkup">
+                        <div id="we_b">
+                            <div class="main-wt">
+                                <h4 class="main-wt-title">Bulk</h4>
+
+                                <ul>
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal122-211">How to gain
+                                            weight</span>
+                                        <div class="modal2" id="modal122-211">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p><strong>Daily calorie consumption + 500 to 1000 kcal additional
+                                                            intake</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal122-311">Principle of weight
+                                            gain</span>
+                                        <div class="modal2" id="modal122-311">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal122-411">Intake of two or three
+                                            additional meals in the basic meal(generally three meals a day)</span>
+                                        <div class="modal2" id="modal122-411">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>It is recommended that you increase the amount and meals of your
+                                                        existing meals and divide your intake of calories(do not overeat
+                                                        at one meal)</p>
+                                                    <p>It is difficult to always get enough calories with meals, so it
+                                                        is recommended to consume at least one meal in the form of a
+                                                        drink</p>
+                                                    <p>Gainer, peanut butter, milk, wheat flour(mixed grain powder +
+                                                        milk / soymilk, mixed grain powder + protein shake) etc</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal122-511">Cardio</span>
+                                        <div class="modal2" id="modal122-511">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>Eating a high-carbohydrate meal during the bulking process lowers
+                                                        the insulin sensitivity of muscle cells and stagnates muscle
+                                                        growth</p>
+                                                    <p>Cardio training increases insulin sensitivity to prevent muscle
+                                                        growth plateau</p>
+                                                    <p>Cardio exercise after weight training can increase the level of
+                                                        growth hormone that increases muscle cells</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal122-611">Fasting weight
+                                            training</span>
+                                        <div class="modal2" id="modal122-611">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>If you perform high-intensity exercise in a state where glycogen,
+                                                        the energy store of muscles, is not replenished, the rapidly
+                                                        depleted glycogen instead of</p>
+                                                    <p>Your body will use protein as an alternative energy source</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal122-711">Carb, Prot, Fat
+                                            Ratio</span>
+                                        <div class="modal2" id="modal122-711">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <h4>Carb, Prot, Fat Ratio</h4>
+                                                    <p>Carb - rest</p>
+                                                    <p>Protein - kg/2.2g</p>
+                                                    <p>Fat - Less than 30% of your total daily intake(calculated as 25%)
+                                                    </p>
+
+                                                    <h5>Slow weight gain</h5>
+                                                    <p>ex) 80kg - Daily total intake: 3500kcal(bulk)</p>
+                                                    <p>Carb: 475g (1900kcal), Prot: 176g (704kcal), Fat: 97g (875kcal)
+                                                    </p>
+
+                                                    <h5>Rapid weight gain</h5>
+                                                    <p>ex) 80kg - Daily total intake: 3800kcal(bulk)</p>
+                                                    <p>Carb: 536g (2145kcal), Prot: 176g (704kcal), Fat: 105g (960kcal)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="yoyo">
+                        <div id="we_y">
+                            <div class="main-wt no-border">
+                                <h4 class="main-wt-title">Yoyo Effect</h4>
+
+                                <ul>
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal123-211">Notes</span>
+                                        <div class="modal2" id="modal123-211">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                    <p>If you are on a diet and suddenly consume a large amount of
+                                                        calories, the body stores all of them as fat</p>
+                                                    <p>If the calorie intake is very low, the body will not use the
+                                                        energy consumed and will try to conserve as much as possible.
+                                                        This reduces the body's metabolism. It makes it rather difficult
+                                                        to lose weight</p>
+                                                    <p>Radical calorie restriction harms weight loss</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+
+                                    <li>
+                                        <span class="cursor" data-modal-target2="#modal123-3"></span>
+                                        <div class="modal2" id="modal123-3">
+                                            <div class="modal-header">
+                                                <button data-close-button2 class="close-button">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-p">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="overlay"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <button class="material-symbols-outlined up-arrow"><a href="#upEn">arrow_upward</a></button>
+
+            </div>
+            <aside class="aside">
+                <div class="calculator-grid">
+                    <div class="output">
+                        <div data-previous-operand class="previous-operand"></div>
+                        <div data-current-operand class="current-operand"></div>
+                    </div>
+                    <button data-all-clear class="span-two">AC</button>
+                    <button data-delete>DEL</button>
+                    <button data-operation>÷</button>
+                    <button data-number>1</button>
+                    <button data-number>2</button>
+                    <button data-number>3</button>
+                    <button data-operation>*</button>
+                    <button data-number>4</button>
+                    <button data-number>5</button>
+                    <button data-number>6</button>
+                    <button data-operation>+</button>
+                    <button data-number>7</button>
+                    <button data-number>8</button>
+                    <button data-number>9</button>
+                    <button data-operation>-</button>
+                    <button data-number id="cal-dot bb">.</button>
+                    <button data-number class="bb">0</button>
+                    <button data-equals class="span-two bb">=</button>
+
+                    <input class="input" type="number"></input>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+
+
+    <div class="ad">
+        <ins class="kakao_ad_area" data-ad-unit="DAN-JyyCt6o2EzDQcszi" data-ad-width="320" data-ad-height="100"></ins>
+    </div>
+
+
+    <%- include('includes/footer') %>
+
+
+</body>
+
+</html>

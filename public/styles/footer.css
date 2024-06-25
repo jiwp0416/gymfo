@@ -1,0 +1,54 @@
+.footer {
+    position: relative;
+    margin: 5rem auto 0 auto;
+    height: 10rem;
+    /* 128px */
+    background-color: var(--333-clr);
+  
+    /* 80px */
+    font-family: sans-serif;
+    color: var(--white-clr);
+    display: flex;
+    justify-content: center;
+    background-color: var(--drk-bg-clr);
+  }
+  
+  .copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 1rem;
+    margin: auto 15px 15px 15px;
+  }
+  
+  .copyright a {
+    color: var(--white-clr);
+  }
+  
+  address {
+    font-size: 12px;
+    margin: 50px 20px;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  
+  .address, .contact2 {
+    width: 175px;
+    margin-top: 8px;
+  }
+  
+  .contact {
+    font-size: 13px;
+    width: 175px;
+    margin: 50px 20px;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  
+  .footer-h5 {
+    margin-bottom: 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--white-clr);
+    width: 80%;
+    margin: 0 auto;
+  }
+  

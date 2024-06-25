@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+  --black-clr: #28282B;
+  --white-clr: #fdfdfd;
+  --drk-bg-clr: #333;
+}
+
+::selection {
+  background-color: var(--drk-bg-clr);
+  color: var(--white-clr);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Gowun Dodum', sans-serif;
+  color-scheme: dark light;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  color: var(--black-clr);
+  background-color: var(--white-clr);
+  font-size: 15px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:focus {
+  color: var(--black-clr);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

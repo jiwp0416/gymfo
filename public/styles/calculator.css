@@ -1,0 +1,141 @@
+.calculator-grid {
+    position: sticky;
+    top: 1rem;
+    right: 1rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: minmax(40px, auto) repeat(5, 40px);
+}
+
+.a-html {
+    display: none;
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid var(--white-clr);
+    outline: none;
+    background-color: var(--white-clr);
+    border-radius: 5px;
+}
+
+.calculator-grid>button:hover {
+    background-color: rgba(239, 239, 239, 0.8);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: var(--drk-bg-clr);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: var(--white-clr);
+    font-size: 14px;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 14px;
+}
+
+#cal-dot {
+    font-size: 20px;
+}
+
+.cal-input {
+    position: sticky;
+    top: 100px;
+    right: 1rem;
+    display: block;
+    margin: 1rem auto;
+    max-width: 150px;
+    min-width: 150px;
+    outline: 0;
+    margin-left: 6px;
+}
+
+
+
+
+
+/* CALCULATOR 2 */
+
+
+.calculate {
+    padding: 3rem 1rem;
+    margin: 1rem;
+    border-bottom: 1px solid #28282b;
+  }
+  
+  .cal-html {
+    margin: 1rem auto;
+  }
+  
+  .cal-main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .cal-btn {
+    color: #28282b;
+  }
+  
+  .calculator-grid2 {
+    position: sticky;
+    top: 1rem;
+    right: 1rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: minmax(40px, auto) repeat(5, 40px);
+  }
+  
+  .calculator-grid2>button {
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid var(--white-clr);
+    outline: none;
+    background-color: var(--white-clr);
+    border-radius: 5px;
+  }
+  
+  .calculator-grid2>button:hover {
+    background-color: rgba(239, 239, 239, 0.8);
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: var(--drk-bg-clr);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-operand {
+    color: var(--white-clr);
+    font-size: 14px;
+  }
+  
+  .output .current-operand {
+    color: white;
+    font-size: 14px;
+  }

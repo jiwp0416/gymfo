@@ -1,0 +1,140 @@
+#navKo,
+#mainKo {
+  display: block;
+}
+
+#navEn,
+#mainEn {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ca2222;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2ab934;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  transform: translateX(55px);
+}
+
+
+/* Change Language */
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.switch>span {
+  position: absolute;
+  top: 12px;
+  pointer-events: none;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked~.off {
+  color: var(--black-clr);
+}
+
+input.check-toggle-round-flat:checked~.on {
+  color: var(--white-clr);
+}
+
+/* KO Position */
+.switch>span.on {
+  left: 2px;
+  color: var(--black-clr);
+}
+
+/* ENG Position */
+.switch>span.off {
+  right: 2px;
+  color: var(--white-clr);
+}
+
+.check-toggle {
+  position: absolute;
+  visibility: hidden;
+}
+
+.check-toggle+label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+/* Toggle Background */
+input.check-toggle-round-flat+label {
+  /* padding: 2px; */
+  width: 90px;
+  height: 35px;
+  background-color: var(--black-clr);
+  border-radius: 60px;
+}
+
+input.check-toggle-round-flat+label:before,
+input.check-toggle-round-flat+label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+/* Moving Button */
+input.check-toggle-round-flat+label:after {
+  top: 4px;
+  left: 5px;
+  bottom: 4px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 52px;
+  transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked+label:after {
+  margin-left: 40px;
+}

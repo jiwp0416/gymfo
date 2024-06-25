@@ -1,0 +1,62 @@
+.index {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form {
+    margin: 5rem 0 2rem 0;
+  }
+  
+  .clock {
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  blockquote {
+    margin-top: 12rem;
+    text-align: center;
+  }
+  
+  #quote div {
+    margin-block: 1rem;
+  }
+  
+  .quotes {
+    font-style: italic;
+    font-size: 20px;
+  }
+  
+  .author {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .index-input{
+    width: 15rem;
+    height: 30px;
+    padding-bottom: 6px;
+    border: none;
+    border-bottom: 1px solid var(--black-clr);
+    outline: var(--black-clr);
+  }
+  
+  .index-input::placeholder{
+    text-align: center;
+  }
+  
+  .index-login{
+    display: inline-block;
+    background: transparent;
+    border: 1px solid var(--black-clr);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px 7px;
+    color: var(--white-clr);
+    background-color: var(--drk-bg-clr);
+  }

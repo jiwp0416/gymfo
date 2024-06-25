@@ -1,0 +1,2 @@
+User-agent: *Allow:/
+Sitemap: https://gymfo.info/sitemap.xml

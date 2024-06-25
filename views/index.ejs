@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta
+      name="description"
+      content=" We try our Best to Please your Work Out Enjoyable and Efficiently / 누구나 즐겁고 효율적으로 쇠질을 접하시는 것을 목표로 합니다. 운동이 평생의 습관이 되도록 항상 최선을 다 하겠습니다"
+    />
+    <meta name="author" content="JIM MAN" />
+    <meta name="keywords" content="GYM, Information, Knowhow" />
+    <meta name="og:site_name" content="GYMFO" />
+    <meta
+      name="og:title"
+      content="Enjoyable and efficient GYM Information / 즐겁고 효율적인 쇠질 노하우"
+    />
+    <meta
+      name="og:description"
+      content="We try our Best to Please your Work Out Enjoyable and Efficiently / 누구나 즐겁고 효율적으로 쇠질을 접하시는 것을 목표로 합니다. 운동이 평생의 습관이 되도록 항상 최선을 다 하겠습니다"
+    />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://gymfo.info/" />
+    <meta name="og:image" content />
+
+    <%- include('includes/head') %>
+
+    <title>
+      GYMFO - Enjoyable and efficient GYM Information / 즐겁고 효율적인 쇠질
+      노하우
+    </title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3V384T0LJC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-3V384T0LJC");
+    </script>
+  </head>
+
+  <body>
+    <%- include('includes/header') %>
+
+    <main>
+      <aside class="aside"></aside>
+
+      <div class="container">
+        <section id="index" class="index">
+          <div class="form">
+            <form class="hidden" id="login-form">
+              <input
+                class="index-input"
+                requierd
+                maxlength="15"
+                type="text"
+                placeholder="What is your name?"
+              />
+              <input class="index-login" type="submit" value="Log In" />
+            </form>
+
+            <h1 class="hidden" id="greeting"></h1>
+          </div>
+
+          <div class="clock">
+            <h2 id="clock">00:00:00</h2>
+            <p>Your time is ticking</p>
+          </div>
+
+          <blockquote>
+            <div id="quote">
+              <div class="quotes"></div>
+              <div class="author"></div>
+            </div>
+          </blockquote>
+        </section>
+      </div>
+      <aside class="aside"></aside>
+    </main>
+
+    <%- include('includes/footer') %>
+  </body>
+</html>

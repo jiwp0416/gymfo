@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <%- include('includes/head') %>
+
+
+  <title>GYMFO - QUAD</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3V384T0LJC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3V384T0LJC');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8832660695566794"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <%- include('includes/header') %>
+
+
+  <main id="mainKo">
+    <div class="main">
+      <aside class="aside">
+
+      </aside>
+
+      <div id="upKo" class="container">
+        <div class="box"></div>
+
+        <header class="inner-box">
+          <div id="standard-posture" class="standard-posture">
+            <h4>기본 자세</h4>
+            <p>가슴 앞으로 내밀고 흉추 아치 형성</p>
+            <p>어깨 완전히 내리고 고정</p>
+          </div>
+        </header>
+
+
+        <section class="theme">
+          <h1 class="main-title cursor" data-modal-target="#modal101">앞벅지(대퇴사두)</h1>
+
+          <div class="modal" id="modal101">
+            <div class="modal-header">
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-p">
+                <img src="https://blog.kakaocdn.net/dn/9JAhj/btqEGCsmxjk/pPkNbu3FIZnrkOvt1hdpdK/img.jpg" alt="">
+                <img
+                  src="https://post-phinf.pstatic.net/MjAyMjAzMjlfMTAz/MDAxNjQ4NTQxNDU4ODg4.uyFeTWZhFJHhwmMfRyilMzf7fk3ZTvOSVzrfDL2KOM0g.rMJ07uuSZJ5eXhZctPhtFu1I5vHaFkGpkJkIrtvWQo4g.PNG/1.png?type=w1200"
+                  alt="">
+              </div>
+            </div>
+          </div>
+          <div id="overlay"></div>
+        </section>
+
+
+        <nav class="main-nav">
+          <h4>바로가기</h4>
+          <ul>
+            <li><a href="#qk_s">스쿼트</a></li>
+            <li><a href="#qk_l-p">레그 프레스</a></li>
+            <li><a href="#qk_l-e">레그 익스텐션</a></li>
+            <li><a href="#qk_l">런지</a></li>
+          </ul>
+        </nav>
+
+
+        <section class="notion">
+          <div class="region">
+            <div class="reg">
+              <div class="part">
+                <span class="bold">대퇴직근</span>
+                <div class="reg2">고관절 굴곡, 무릎 관절 폄</div>
+              </div>
+              <div class="details"><a href="#qk_s">스쿼트</a>, <a href="#qk_l-e">레그 익스텐션</a> 등</div>
+            </div>
+
+            <div class="reg">
+              <div class="part">
+                <span class="bold">외측광근</span>
+                <div class="reg2">무릎을 폄</div>
+              </div>
+              <div class="details"><a href="#qk_s">스쿼트</a>, <a href="#qk_l-e">레그 익스텐션</a> 등</div>
+            </div>
+
+            <div class="reg">
+              <div class="part">
+                <span class="bold">내측광근</span>
+                <div class="reg2">무릎을 폄</div>
+              </div>
+              <div class="details"><a href="#qk_s"> 스쿼트</a>, <a href="#qk_l-e">레그 익스텐션</a> 등</div>
+            </div>
+
+            <div class="reg">
+              <div class="part">
+                <span class="bold">중간광근</span>
+                <div class="reg2">무릎을 폄</div>
+              </div>
+              <div class="details"><a href="#qk_s">스쿼트</a>, <a href="#qk_l-e"> 레그 익스텐션</a> 등</div>
+            </div>
+          </div>
+          <div class="ps">
+          </div>
+        </section>
+
+
+        <section class="workout">
+          <div id="q_s">
+            <div class="main-wt">
+              <h4 class="main-wt-title">
+                <span class="cursor" data-modal-target="#modal102">스쿼트</span>
+                <div class="modal" id="modal102">
+                  <div class="modal-header">
+                    <button data-close-button class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-p">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="overlay"></div>
+              </h4>
+              <ul>
+                <li class="basic-form" onclick="myFunction(event)">기본 자세</li>
+                <li>발 - 뒷꿈치가 어깨 너비에서 약간 넓은 정도. 발 끝은 바깥 쪽을 사선으로 보게하기 ! 개인차가 있으니 무릎이 모이지 않는 자세로 능동적으로 수행</li>
+                <li>무릎 방향 - 발 끝 방향과 같은 방향을 보게 설정</li>
+                <li>무게 중심 - 뒤쪽(뒷꿈치 쪽)에 위치</li>
+                <li>척추 중립 - 허리는 항상 복압을 통해 중립</li>
+                <li>복압 - 복식호흡을 통해 배에 복압을 높여주고 복부에 힘 주기</li>
+                <li>고관절 - 고관절은 살짝만 뒤로 빼고 수직으로 앉는 것에 집중</li> <span class="s-s"> -> 너무 엉덩이를 뒤로 빼면 허리가 많이 숙여져 허리 부담이
+                  높아짐</span>
+                <li>고관절 접힘 - 고관절이 접히도록 의식하여 수행</li> <span class="s-s"> -> 쉽게, 몸의 중심을 뒤로 하고 수직으로 내려가기</span>
+                <li>동시 펴짐 - 무릎, 허벅지, 고관절이 동시에 펴지도록 의식</li>
+                <li>힘 - 위쪽 허벅지와 고관절에 힘이 들어가도록 의식</li>
+                ---
+                <li>호흡 - 흡기(들숨) 후 내려갔다가 올라오고 호기(날숨). 바로 흡기 후 내려갔다고 올라오고 호기. 반복</li>
+                <li>! 벗윙크. 쭈구려 앉을 때 골반이 바닥 쪽으로 말려 요추가 둥글게 말리는 현상 주의</li>
+                <li>! 굿모닝 자세. 상체보다 엉덩이가 빨리 올라오면 허리를 숙여 인사하는 듯한 자세가 되며 이는 허리에 안 좋으니 주의</li>
+              </ul>
+              <div class="benefit">
+                전반적인 하체 성장과 상체에 매우 효과적
+              </div>
+              <div class="methods">
+                <h4>다양한 동작들</h4>
+                <div class="more-method">
+                  <h4>백스쿼트</h4>
+                  <p>
+                    <button class="modal-icon" class="cursor" data-modal-target="#modal103">
+                      <img src="/IMG/+.png" alt=""></button>
+                    <div class="modal" id="modal103">
+                      <div class="modal-header">
+                        <!-- <div class="title">Example Modal</div> -->
+                        <button data-close-button class="close-button">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="modal-p">하이바 vs 로우바</div>
+                        뭘 하든 중요한 것은 바가 몸과 수직이여서 중심이 잘 잡히냐는 것이다. 목에다 바벨을 대는 하이바는 중심이 앞쪽에 있어 바벨을 올릴 때 허리가
+                        많이 사용되고 굿모닝 자세를 유발할 수 있다. 물론 하이바를 해도 괜찮은 체형과 유연성을 가지고 있다면 괜찮다. 로우바는 중심이 몸통 중앙에 생기기에 더 효과적으로
+                        수행할
+                        수
+                        있을 것이다. 효과적인 자세는 모든 사람마다 다르기에 중심을 잡고 수직 저항을 주는 방법을 생각하며 편한 동작을 수행하자
+                      </div>
+                    </div>
+                    <div id="overlay"></div>
+                  </p>
+                </div>
+                <div class="more-method">
+                  <h4>프런트 스쿼트</h4>
+                  <p>상체가 수직에 가까운 스쿼트. 상체를 단단하게 만들어 줌. 흉추 유연성 증가. 목에 완전 붙다시피 바벨을 붙이고 두 손가락을 바에 걸쳐 지지. 또는 편하게 손을 X자를 만들어
+                    바위
+                    견착</p>
+                </div>
+                <div class="more-method">
+                  <h4>핵 스쿼트</h4>
+                  <p>백스쿼트에 비해 상체 활성도가 현저히 낮고 하체 활성도가 높다. 하체만을 집중적으로 타겟하기에 좋음</p>
+                </div>
+                <div class="more-method">
+                  <h4>불가리안 스플릿 스쿼트</h4>
+                  <p>발을 앞뒤로 벌린 후 앉았다 일어남. 뒷다리는 벤치나 박스 위에 올려서 수행. 자신에게 편한 자세를 찾아 수행</p>
+                </div>
+                <div class="more-method">
+                  <h4>가블릿 스쿼트</h4>
+                  <p>케틀벨이나 덤벨을 몸 앞 쪽에 위치하여 무게중심을 잡아 주니 상대적으로 자세를 쉽게 잡은 상태로 운동을 수행할 수 있다. 팔꿈치는 지면을 보도록 위치</p>
+                  <p>!중량이 올라 갈수록 상체 힘을 많이 필요로 하여 반복횟수가 현저히 떨어질 수 있다. 그러니 가블릿 스쿼트는 백스쿼트 자세를 만들기 위한 보조 운동 또는 워밍업으로 해주는 것이
+                    효과적일 것이다</p>
+                </div>
+                <div class="more-method">
+                  <h4>스미스 머신 스쿼트</h4>
+                  <p>궤적이 정해져 있어 초중급자는 사용 X. 상급자는 특정 부위 고립을 위해 사용하면 효과적</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="q_l-p">
+            <div class="main-wt">
+              <h4 class="main-wt-title">
+                <span class="cursor" data-modal-target="#modal104">레그 프레스</span>
+                <div class="modal" id="modal104">
+                  <div class="modal-header">
+                    <button data-close-button class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-p">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="overlay"></div>
+              </h4>
+              <ul>
+                <li class="basic-form" onclick="myFunction(event)">기본 자세</li>
+                <li>힘 - 뒤꿈치에 무게 중심을 두어 밀기</li>
+                <li>무릎 - 다리가 내려갔을 때 무릎과 발끝은 일자(본인 시선 기준)</li>
+                <li>허리 - 중립을 유지. 내렸을 때 허리가 뜨지 않게 의식</li>
+                <li>힘 포커스 - 허벅지 상단(+ 고관절)에 집중하여 수행</li>
+                <li>! 무릎이 돌아가지 않도록 주의. 고중량(상대적)으로 수행 시 다리를 과하게 펴지 않고, 다 핀다면 꼭 대퇴사두에 힘 주기</li>
+              </ul>
+              <div class="benefit">
+                전반적인 하체 성장과 종아리에 효과적인 운동
+              </div>
+              <div class="methods">
+                <h4>다양한 동작들</h4>
+                <div class="more-method">
+                  <h4>기본 스탠스</h4>
+                  <p>다리 전체에 효과적</p>
+                </div>
+                <div class="more-method">
+                  <h4>와이드 스탠스</h4>
+                  <p>다리 안쪽(내전근)에 효과적</p>
+                </div>
+                <div class="more-method">
+                  <h4>내로우 스탠스</h4>
+                  <p>다리 바깥 쪽(대퇴부)에 효과적</p>
+                </div>
+                <div class="more-method">
+                  <h4>하이 스탠스</h4>
+                  <p>다리 뒤쪽(햄스트링, 엉덩이)에 효과적</p>
+                </div>
+                <div class="more-method">
+                  <h4>로우 스탠스</h4>
+                  <p>다리 앞쪽(앞 허벅지, 대퇴사두)에 효과적</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="q_l-e">
+            <div class="main-wt">
+              <h4 class="main-wt-title">
+                <span class="cursor" data-modal-target="#modal105">레그 익스텐션</span>
+                <div class="modal" id="modal105">
+                  <div class="modal-header">
+                    <button data-close-button class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-p">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="overlay"></div>
+              </h4>
+              <ul>
+                <li class="basic-form" onclick="myFunction(event)">기본 자세</li>
+                <li>발목 - 발목은 발목패드에 딱 붙게 위치</li>
+                <li>무릎 - 무릎은 의자에 최대한 딱 붙게 위치</li>
+                <li>발끝 - 발끝은 위를 향하도록 의식</li>
+                <li>힘 포커스 - 허벅지 상단(+ 고관절)에 집중하여 수행</li>
+                <li>! 무릎과 정강이로 들어올리지 않게 의식하라</li>
+              </ul>
+              <div class="benefit">
+                허벅지 앞쪽(대퇴사두)에 효과적
+              </div>
+            </div>
+          </div>
+
+
+          <div id="q_l" class="relative">
+            <div class="main-wt no-border">
+              <h4 class="main-wt-title">
+                <span class="cursor" data-modal-target="#modal106">런지</span>
+                <div class="modal" id="modal106">
+                  <div class="modal-header">
+                    <button data-close-button class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-p">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="overlay"></div>
+              </h4>
+              <ul>
+                <li class="basic-form" onclick="myFunction(event)">기본 자세</li>
+                <li>무릎 - 무릎이 앞으로 밀리지 않게 의식</li>
+                <li>수직 저항 - 몸이 수직으로 내려가도록 의식</li>
+                <li>뒷 다리 - 뒷 다리는 스트레칭 되게 하여 앞뒤 양 다리 둘다 운동 되도록 수행</li>
+                <li>수행 방식 - 제 자리에서 양 다리를 번갈아 가며 수행</li>
+                <li>고립 - 대퇴사두만을 고립하고 싶다면 다리를 번갈아 수행하지 않고 한 다리만 반복적으로 수행</li>
+              </ul>
+              <div class="benefit">
+              </div>
+              <div class="methods">
+                <h4>다양한 동작들</h4>
+                <div class="more-method">
+                  <h4>롱 런지</h4>
+                  <p>햄스트링, 둔근 쪽에 효과적. 뒷 다리는 일자로 놓아 스트레칭 되게 위치. 다리를 밀어 올릴 땐 허벅지 안쪽(내전근)에 자극. !한 다리만 수행 시 바깥 쪽 근육 활성도가 높음
+                  </p>
+                </div>
+                <div class="more-method">
+                  <h4>숏 런지</h4>
+                  <p>바깥 쪽(외측광근)에 효과적. 중심이 뒤쪽에 있어야 한며 뒷 다리는 스트레칭 되게 자세를 잡아라. 발 앞쪽이 아닌 발 뒤쪽(발꿈치)으로 밀어라. 이때 허벅지 안쪽에 자극이 간다.
+                    같은 자리에서 다리를 번갈아 가며 수행</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <button class="material-symbols-outlined up-arrow"><a href="#upKo">arrow_upward</a></button>
+
+      </div>
+      <aside class="aside"></aside>
+    </div>
+  </main>
+
+
+
+
+
+  <main id="mainEn">
+    <div class="main">
+      <aside class="aside">
+
+      </aside>
+
+      <div id="upEn" class="container">
+        <div class="box"></div>
+
+
+
+        <header class="inner-box">
+          <div id="standard-posture" class="standard-posture">
+            <h4>Standard Posture</h4>
+            <p>Make chest forward and form the thoracic arch</p>
+            <p>shoulder fully down and fixed</p>
+          </div>
+        </header>
+
+
+
+        <section class="theme">
+          <h1 class="main-title cursor" data-modal-target2="#modal101-11.">QUAD</h1>
+
+          <div class="modal2" id="modal101-11.">
+            <div class="modal-header">
+              <button data-close-button2 class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-p">
+                <img src="https://blog.kakaocdn.net/dn/9JAhj/btqEGCsmxjk/pPkNbu3FIZnrkOvt1hdpdK/img.jpg" alt="">
+                <img
+                  src="https://post-phinf.pstatic.net/MjAyMjAzMjlfMTAz/MDAxNjQ4NTQxNDU4ODg4.uyFeTWZhFJHhwmMfRyilMzf7fk3ZTvOSVzrfDL2KOM0g.rMJ07uuSZJ5eXhZctPhtFu1I5vHaFkGpkJkIrtvWQo4g.PNG/1.png?type=w1200"
+                  alt="">
+              </div>
+            </div>
+          </div>
+          <div id="overlay"></div>
+        </section>
+
+
+        <nav class="main-nav">
+          <h4>바로가기</h4>
+          <ul>
+            <li><a href="#qe_s">Squat</a></li>
+            <li><a href="#qe_l-p">Leg Press</a></li>
+            <li><a href="#qe_l-e">Leg Extension</a></li>
+            <li><a href="#qe_l">Lunge</a></li>
+          </ul>
+        </nav>
+
+
+        <section class="notion">
+          <div class="region">
+            <div class="reg">
+              <div class="part">
+                <span class="bold">Rectus Femoris</span>
+                <div class="reg2">hip flexion, knee joint extension</div>
+              </div>
+              <div class="details"><a href="#qe_s">Squat</a>, <a href="#qe_l-e">Leg Extension</a> etc</div>
+            </div>
+
+            <div class="reg">
+              <div class="part">
+                <span class="bold">Vastus lateralis</span>
+                <div class="reg2">straighten your knees</div>
+              </div>
+              <div class="details"><a href="#qe_s">Squat</a>, <a href="#qe_l-e">Leg Extension</a> etc</div>
+            </div>
+
+            <div class="reg">
+              <div class="part">
+                <span class="bold">Vastus Medialis</span>
+                <div class="reg2">straighten your knees</div>
+              </div>
+              <div class="details"><a href="#qe_s">Squat</a>, <a href="#qe_l-e">Leg Extension</a> etc</div>
+            </div>
+
+            <div class="reg">
+              <div class="part">
+                <span class="bold">Vastus Intermedius</span>
+                <div class="reg2">straighten your knees</div>
+              </div>
+              <div class="details"><a href="#qe_s">Squat</a>, <a href="#qe_l-e">Leg Extension</a> etc</div>
+            </div>
+          </div>
+          <div class="ps">
+          </div>
+        </section>
+
+
+        <section class="workout">
+          <div id="qe_s">
+            <div class="main-wt">
+              <h4 class="main-wt-title">
+                <span class="cursor" data-modal-target2="#modal102-11.">Squat</span>
+                <div class="modal2" id="modal102-11.">
+                  <div class="modal-header">
+                    <button data-close-button2 class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-p">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="overlay"></div>
+              </h4>
+              <ul>
+                <li class="basic-form" onclick="myFunction(event)">기본 자세</li>
+                <li>Feet - The heels are slightly wider than shoulder width. Point your toes at an angle to the outside!
+                  There are individual differences, so perform actively in a position where the knees do not converge
+                </li>
+                <li>Knee direction - set to face the same direction as the toe</li>
+                <li>Center of gravity - located at the rear(heel side)</li>
+                <li>Spinal Neutral - The lower back is always neutral through abdominal pressure</li>
+                <li>Abdominal pressure - increase abdominal pressure through abdominal breathing and give strength to
+                  the abdomen</li>
+                <li>Hips - focus on sitting upright with the hips back slightly</li> <span class="s-s"> -> If you pull
+                  your hips back too much, your lower back will bend too much, increasing the burden on your lower
+                  back</span>
+                <li>Hip joint folding - Perform consciously so that the hip joint is folded</li> <span class="s-s"> ->
+                  Vertical descent with center of gravity behind</span>
+                <li>Simultaneous extension - Conscious of simultaneous extension of the knee, thigh, and hip joint</li>
+                <li>Strength - Consciously engage the upper thighs and hips</li>
+                ---
+                <li>Respiration - Inhale (inhale) then go down, then come up and exhale (exhale). Immediately after
+                  inhalation, go down, then come up and exhale. repeat</li>
+                <li>! butt wink. When squatting down, the pelvis rolls toward the floor, causing the lumbar spine to be
+                  rounded.</li>
+                <li>! Good morning posture. If your hips come up faster than your upper body, you will be in a posture
+                  like bowing down and saying hello. This is bad for your back, so be careful</li>
+              </ul>
+              <div class="benefit">
+                Very effective for overall Lower Body and Upper Body
+              </div>
+              <div class="methods">
+                <h4>Various Actions</h4>
+                <div class="more-method">
+                  <h4>Back Squat</h4>
+                  <p>
+                    <button class="modal-icon" class="cursor" data-modal-target2="#modal103-11.">
+                      <img src="/IMG/+.png" alt=""></button>
+                    <div class="modal2" id="modal103-11.">
+                      <div class="modal-header">
+                        <!-- <div class="title">Example Modal</div> -->
+                        <button data-close-button2 class="close-button">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="modal-p">High Bar vs Low Bar</div>
+                        No matter what you do, the important thing is that the bar is perpendicular to your body so that
+                        you are well centered. The high bar, which is placed on the neck with a barbell, is centered in
+                        the front, so when lifting the barbell, the waist is not
+                        It is used a lot and can induce good morning posture. Of course, if you have the right body
+                        shape and flexibility to do the high bar, it's okay. The low bar is more effective because the
+                        center of gravity is in the middle of the body.
+                        will be able to do Effective posture is different for everyone, so keep your balance and think
+                        about how to give vertical resistance and perform comfortable movements
+                      </div>
+                    </div>
+                    <div id="overlay"></div>
+                  </p>
+                </div>
+                <div class="more-method">
+                  <h4>Front Squat</h4>
+                  <p>Squats where the upper body is close to vertical. Makes the upper body rigid. Increased thoracic
+                    spine flexibility. Attach the barbell to your neck and place your two fingers across the bar.
+                    Alternatively, make an X shape with your hands comfortably on your shoulder</p>
+                </div>
+                <div class="more-method">
+                  <h4>Hack Squat</h4>
+                  <p>Compared to the back squat, the upper body activity is significantly lower and the lower body
+                    activity is high. Good for targeting only the lower body</p>
+                </div>
+                <div class="more-method">
+                  <h4>Bulgarian Split Squat</h4>
+                  <p>Stand up after sitting down with your feet spread back and forth. Performed with the hind leg
+                    resting on a bench or box. Find a position that is comfortable for you</p>
+                </div>
+                <div class="more-method">
+                  <h4>Goblet Squat</h4>
+                  <p>The kettlebell or dumbbell is placed in front of the body to hold the center of gravity, so you can
+                    perform the exercise with a relatively easy posture. elbows facing the ground</p>
+                  <p>! As the weight goes up, more upper body strength is required, so the number of repetitions can
+                    drop significantly. Therefore, it would be effective to do the goblet squat as an auxiliary exercise
+                    or warm-up to create a back squat posture</p>
+                </div>
+                <div class="more-method">
+                  <h4>Smith Machine Squat</h4>
+                  <p>Since the trajectory is set, beginners and intermediates can use it X. Advanced users can use it to
+                    isolate a specific part for effective</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="qe_l-p">
+            <div class="main-wt">
+              <h4 class="main-wt-title">
+                <span class="cursor" data-modal-target2="#modal104-11.">Leg Press</span>
+                <div class="modal2" id="modal104-11.">
+                  <div class="modal-header">
+                    <button data-close-button2 class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-p">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="overlay"></div>
+              </h4>
+              <ul>
+                <li class="basic-form" onclick="myFunction(event)">Standard Posture</li>
+                <li>Power - push with weight centered on the heel</li>
+                <li>Knee - When the leg is down, the knee and toe are straight(based on the person's gaze)</li>
+                <li>Waist - Stay neutral. Be conscious of not lifting your lower back when you get down</li>
+                <li>Strength focus - performed with a focus on the upper thighs(+ hips)</li>
+                <li>! Be careful not to rotate your knee. When performing with a high weight (relatively), do not
+                  overextend your legs, and if they are fully extended, be sure to give strength to the quadriceps</li>
+              </ul>
+              <div class="benefit">
+                Effective for overall Lower Body and Calf
+              </div>
+              <div class="methods">
+                <h4>Various Actions</h4>
+                <div class="more-method">
+                  <h4>Basic Stance</h4>
+                  <p>Effective for Entire Leg</p>
+                </div>
+                <div class="more-method">
+                  <h4>Wide Stance</h4>
+                  <p>Effective for Inside Leg(adductors)</p>
+                </div>
+                <div class="more-method">
+                  <h4>Narrow Stance</h4>
+                  <p>Effective for Outside Leg(thigh)</p>
+                </div>
+                <div class="more-method">
+                  <h4>High Stance</h4>
+                  <p>Effective for Back Legs(hamstrings, hips)</p>
+                </div>
+                <div class="more-method">
+                  <h4>Low Stance</h4>
+                  <p>Effective for Front Leg(quad)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="qe_l-e">
+            <div class="main-wt">
+              <h4 class="main-wt-title">
+                <span class="cursor" data-modal-target2="#modal105-11.">Leg Extension</span>
+                <div class="modal2" id="modal105-11.">
+                  <div class="modal-header">
+                    <button data-close-button2 class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-p">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="overlay"></div>
+              </h4>
+              <ul>
+                <li class="basic-form" onclick="myFunction(event)">Standard Posture</li>
+                <li>Ankle - Ankle positioned snugly against the ankle pad</li>
+                <li>Knees - Place your knees as close to the chair as possible</li>
+                <li>Toes - Consciously point the toes upwards</li>
+                <li>Strength focus - performed with a focus on the upper thighs(+ hips)</li>
+                <li>! Be conscious of not lifting with your knees and shins</li>
+              </ul>
+              <div class="benefit">
+                Effective for Front Leg(quad)
+              </div>
+            </div>
+          </div>
+
+
+          <div id="qe_l" class="relative">
+            <div class="main-wt no-border">
+              <h4 class="main-wt-title">
+                <span class="cursor" data-modal-target2="#modal106-11.">Lunge</span>
+                <div class="modal2" id="modal106-11.">
+                  <div class="modal-header">
+                    <button data-close-button2 class="close-button">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-p">
+                      <img src="" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div id="overlay"></div>
+              </h4>
+              <ul>
+                <li class="basic-form" onclick="myFunction(event)">Standard Posture</li>
+                <li>Knees - Be conscious of not pushing your knees forward</li>
+                <li>Vertical Resistance - Conscious of moving your body vertically down</li>
+                <li>Back leg - The back leg is stretched so that both front and back legs are exercised</li>
+                <li>How to perform - Perform alternating legs in place</li>
+                <li>Isolation - If you want to isolate only the quads, do one leg repeatedly without alternating legs
+                </li>
+              </ul>
+              <div class="benefit">
+              </div>
+              <div class="methods">
+                <h4>Various Actions</h4>
+                <div class="more-method">
+                  <h4>Long Lunge</h4>
+                  <p>Effective for Hamstrings and Glutes. Place the back leg straight so that it is stretched. When you
+                    push your legs up, stimulate the inner thighs(adductors). !External muscle activity is high when
+                    performing with only one leg</p>
+                </div>
+                <div class="more-method">
+                  <h4>Short Lunge</h4>
+                  <p>Effective on the outside (vastis externalis). Position yourself so that your center of gravity is
+                    back and your back leg is stretched. Push with the back of the foot (heel), not the front of the
+                    foot. At this time, the inner thigh is stimulated. Alternate legs in the same spot</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <button class="material-symbols-outlined up-arrow"><a href="#upEn">arrow_upward</a></button>
+
+      </div>
+      <aside class="aside"></aside>
+    </div>
+  </main>
+
+
+
+  <div class="ad">
+    <ins class="kakao_ad_area" data-ad-unit="DAN-JyyCt6o2EzDQcszi" data-ad-width="320" data-ad-height="100"></ins>
+  </div>
+
+
+  <%- include('includes/footer') %>
+
+
+</body>
+
+</html>
